@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+
+}
+
+.menu { grid-area: menu; }
+.header { grid-area: header; }
+.main { grid-area: main; }
+.right { grid-area: right; }
+.footer { grid-area: footer; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+            'menu menu menu menu menu menu'
+            'header header header header header header'
+            'main main main right right right'
+            'footer footer footer footer footer footer';
+
+    grid-gap: 10px;
+    background-color: white;
+    padding: 10px;
+}
+
+.grid-container > div {
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+}
+
+li {
+    float: left;
+    border-right: 1px solid ghostwhite;
+}
+
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: green;
+}
+
+.flex-container {
+    display:flex;
+    background-image: url("images/mountains.jpg");
+}
+
+/*.container {*/
+    /*position:absolute;*/
+    /*max-width: 800px;*/
+    /*margin: 0 auto;*/
+/*}*/
+
+/*.container img  {vertical-align: middle;}*/
+
+.flex-container .content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: lightgray;
+    width: 91%;
+    padding: 20px;
+}
+
+
